@@ -114,6 +114,8 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     android.hardware.boot-V1-ndk
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.gatekeeper-V1-ndk.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libc++.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.graphics.common@1.0.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \

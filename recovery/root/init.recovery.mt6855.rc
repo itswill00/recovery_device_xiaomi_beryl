@@ -8,6 +8,7 @@ on init
     setprop sys.usb.controller "musb-hdrc"
     setprop sys.usb.ffs.aio_compat 0
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw:/system/lib64/hw
+    copy /vendor/lib64/libc++.so /system/lib64/libc++.so
     copy /vendor/lib64/libkeymaster_messages.so /system/lib64/libkeymaster_messages.so
     copy /vendor/lib64/libkeymaster_portable.so /system/lib64/libkeymaster_portable.so
     copy /vendor/lib64/libkeymint.so /system/lib64/libkeymint.so

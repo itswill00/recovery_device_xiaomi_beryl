@@ -21,6 +21,26 @@
 # screen settings
 # e.g. if the aspect ratio is 19:9 then use 19*120 (=2280)
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+
+# Inherit from beryl device
+$(call inherit-product, device/xiaomi/beryl/device.mk)
+
+# Configure emulated_storage.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
+PRODUCT_DEVICE := beryl
+PRODUCT_NAME := fox_beryl
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Redmi Note 14 5G
+PRODUCT_MANUFACTURER := Xiaomi
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.twrp.vendor_boot=true \
+    persist.sys.fuse.passthrough.enable=true
+
 # OrangeFox maintainer
 OF_MAINTAINER := aerichandesu@noticesa
 

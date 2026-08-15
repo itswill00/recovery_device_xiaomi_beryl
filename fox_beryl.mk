@@ -22,7 +22,7 @@
 # e.g. if the aspect ratio is 19:9 then use 19*120 (=2280)
 
 # OrangeFox maintainer
-OF_MAINTAINER := 🔥IQ_HARRY_07🔥
+OF_MAINTAINER := aerichandesu@noticesa
 
 # Screen settings
 OF_SCREEN_H := 2400

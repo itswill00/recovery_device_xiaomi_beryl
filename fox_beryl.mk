@@ -39,6 +39,11 @@ OF_ENABLE_LPTOOLS := 1
 OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
 OF_DYNAMIC_FULL_SIZE := 9126805504
 
+# Flashlight
+OF_FLASHLIGHT_ENABLE := 1
+OF_FL_PATH1 := "/sys/class/flashlight/flashlight/flashlight_brightness"
+OF_FL_PATH2 := "/sys/class/leds/flashlight/brightness"
+
 # number of list options before scrollbar creation
 OF_OPTIONS_LIST_NUM := 11
 

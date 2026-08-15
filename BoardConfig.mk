@@ -224,7 +224,8 @@ TW_MAX_BRIGHTNESS := 2047
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 
 # Haptics
-TW_NO_HAPTICS := true
+TW_NO_HAPTICS := false
+TW_VIBRATOR_PATH := "/sys/class/leds/vibrator"
 
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_LOAD_VENDOR_MODULES := "fts_touch_i2c.ko lct_tp.ko xiaomi_tp.ko xiaomi_fp.ko adsp.ko nfc_i2c.ko"

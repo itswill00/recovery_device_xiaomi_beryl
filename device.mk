@@ -129,8 +129,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/first_stage_ramdisk/fstab.mt6855:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6855 \
     $(LOCAL_PATH)/recovery/root/first_stage_ramdisk/fstab.emmc:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.emmc
 
-# Copy stock vendor_ramdisk essentials to ramdisk00 — sepolicy, context files, init
+# Copy stock vendor_ramdisk essentials to ramdisk00 — sepolicy, context files, snapuserd, init
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vendor_ramdisk/first_stage_ramdisk/system/bin/snapuserd:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/system/bin/snapuserd \
     $(LOCAL_PATH)/vendor_ramdisk/system/bin/mtk_plpath_utils:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/mtk_plpath_utils \
     $(LOCAL_PATH)/vendor_ramdisk/system/bin/init:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/system/bin/init \
     $(LOCAL_PATH)/vendor_ramdisk/init:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/init \
